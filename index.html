@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta title="ユアコーディング" description="XDデザインからのコーディング練習">
+  <title>ユアコーディング</title>
+  <!-- reset.css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <!-- WOW.js -->
+  <link rel="stylesheet" href="/css/animate.css">
+  <script src="/js/wow.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+  <!-- original -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="drawer drawer--right drawer--navbarTopGutter">
+  <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+    <div class="drawer-container inner">
+      <div class="drawer-navbar-header">
+        <a class="header__logo" href="#"><img src="/image/logo.png" alt="ロゴ">
+          <h1>ユアコーディング</h1>
+        </a>
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+      </div>
+      <!-- ナビゲーションの中身 -->
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="#">特徴</a></li>
+          <li><a class="drawer-menu-item" href="#">価格</a></li>
+          <li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn">
+        <a href="#contact" class="btn contact-btn">お問い合わせ</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wow fadeInUp slow">
+      <div class="hero__inner inner">
+        <div class="hero__text">
+          <h2 class="hero__title title">コーディングの手間を<br>最小に、デザインに注力<br>する助けに</h2>
+          <p class="hero__lead">ユアコーディングはコーディングに<br>特化したフリーランス<br>デザインに注力されたい方の<br>助けになります</p>
+          <a href="#contact" class="btn contact-btn hero__btn">お問い合わせ</a>
+        </div>
+        <div class="hero__image">
+          <img src="/image/manager.png" alt="ヒーロー画像">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="features__inner inner">
+        <h2 class="title wow fadeIn">ユアコーディング3つの特徴</h2>
+        <p class="title-en wow fadeIn">FEATURES</p>
+        <div class="features__contents">
+          <div class="features__item">
+            <h3 class="features__subtitle wow fadeIn">高速コーディング</h3>
+            <div class="features__flex wow fadeInUp">
+              <img class="features__image" src="image/cto.png" alt="高速コーディング">
+              <div class="features__text">
+                <h4>コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</h4>
+                <p>開発は常にスピードとの勝負です。<br>ユアコーディングはコーディングに特化しているため、<br>素早く納品することで、クライアントがデザインに注力<br>する助けとなります。</p>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <h3 class="features__subtitle wow fadeIn">高品質</h3>
+            <div class="features__flex wow fadeInUp">
+              <img class="features__image" src="image/building_website.png" alt="高品質">
+              <div class="features__text">
+                <h4>正しいマークアップで、<br>内部SEOに強いコーディングを<br>デフォルトで行います。</h4>
+                <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」<br>「保守しやすい」「拡張しやすい」と言った設計をもとに<br>きちんとコーディングを行うため、納品後も安心です。</p>
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <h3 class="features__subtitle wow fadeIn">迅速なレスポンス</h3>
+            <div class="features__flex wow fadeInUp">
+              <img class="features__image" src="image/new_message.png" alt="迅速なレスポンス">
+              <div class="features__text">
+                <h4>原則いただいたメッセージは、<br>業務時間内であれば6時間以内に<br>お返しいたします。</h4>
+                <p>連絡を返さないフリーランスが多い中、<br>ユアコーディングでは定期的な進捗報告など、<br>社会人としての基本を踏まえて仕事を行なって<br>おります。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="inner">
+        <h2 class="title wow fadeIn">価格</h2>
+        <p class="title-en wow fadeIn">PRICE</p>
+        <table class="price__table wow fadeInUp">
+          <tr>
+            <td>HTMLコーディングトップページ</td>
+            <td>30.000円〜</td>
+          </tr>
+          <tr>
+            <td>HTMLコーディング下層1ページ</td>
+            <td>10.000円〜</td>
+          </tr>
+          <tr>
+            <td>HTML+WordPressトップページ</td>
+            <td>55.000円〜</td>
+          </tr>
+          <tr>
+            <td>HTML+WordPress下層1ページ</td>
+            <td>15.000円〜</td>
+          </tr>
+        </table>
+        <p class="price__comment">＊詳細な価格はページや仕様によって異なります</p>
+      </div>
+    </section>
+
+    <section class="faq wow fadeInUp slow">
+      <div class="inner">
+        <h2 class="title">よくある質問</h2>
+        <p class="title-en">FAQ</p>
+        <dl class="faq__contents">
+          <dt>デザインから一貫してお願いすることは可能でしょうか</dt>
+          <dd class="js-active">ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
+            ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+          </dd>
+          <dt>WordPressのカスタマイズをお願いすることも可能でしょうか？</dt>
+          <dd>可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。</dd>
+          <dt>コーディングのスピード感が知りたい</dt>
+          <dd>HTMLレスポンシブ込み5ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に なります。</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="blog wow fadeInUp slow">
+      <div class="blog__inner">
+        <h2 class="title">ブログ</h2>
+        <p class="title-en">BLOG</p>
+        <div class="blog__contents">
+          <div class="blog__item">
+            <img src="/image/austin-distel-wawEfYdpkag-unsplash.png" alt="サイトリニューアル">
+            <div class="blog__item-text">
+              <p class="blog__item-title">サイトをリニューアルオープンしました。</p>
+              <p class="blog__item-date">2020.01.23</p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <img src="/image/dylan-gillis-KdeqA3aTnBY-unsplash.png" alt="SEO">
+            <div class="blog__item-text">
+              <p class="blog__item-title">WebサイトでSEO内部施策に適したコーディングでどれぐらいサイトが早くなるのか検証してみました</p>
+              <p class="blog__item-date">2020.01.24</p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <img src="/image/brooke-cagle-g1Kr4Ozfoac-unsplash.png" alt="募集">
+            <div class="blog__item-text">
+              <p class="blog__item-title">ユアコーディングではデザイナーの方を 広く募集しています。</p>
+              <p class="blog__item-date">2020.01.25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works wow fadeInUp slow">
+      <div class="works__inner">
+        <h2 class="title">制作実績</h2>
+        <p class="title-en">WORKS</p>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="works__card" href="">
+                <div class="works__image">
+                  <img src="/image/works01.png" alt="">
+                </div>
+                <div class="works__text">
+                  <h3 class="works__text-title">コーディングカンファレンスのイベントLPの制作を行いました！</h3>
+                  <div class="works__text-box">
+                    <p class="tech">採用技術：jQuery,WordPress</p>
+                    <p class="period">実装期間：4週間</p>
+                    <p class="coder">担当コーダー：石井</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="works__card" href="">
+                <div class="works__image">
+                  <img src="/image/works02.png" alt="">
+                </div>
+                <div class="works__text">
+                  <h3 class="works__text-title">株式会社サンプル様採用サイトのコーディングを行いました！</h3>
+                  <div class="works__text-box">
+                    <p class="tech">採用技術：jQuery,Bootstrap4</p>
+                    <p class="period">実装期間：2週間</p>
+                    <p class="coder">担当コーダー：石井</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="works__card" href="">
+                <div class="works__image">
+                  <img src="/image/works03.png" alt="">
+                </div>
+                <div class="works__text">
+                  <h3 class="works__text-title">株式会社サンプル様採用サイトのコーディングを行いました！</h3>
+                  <div class="works__text-box">
+                    <p class="tech">採用技術：jQuery,Bootstrap4</p>
+                    <p class="period">実装期間：6週間</p>
+                    <p class="coder">担当コーダー：石井</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="works__card" href="">
+                <div class="works__image">
+                  <img src="/image/works02.png" alt="">
+                </div>
+                <div class="works__text">
+                  <h3 class="works__text-title">株式会社サンプル様採用サイトのコーディングを行いました！</h3>
+                  <div class="works__text-box">
+                    <p class="tech">採用技術：jQuery,Bootstrap4</p>
+                    <p class="period">実装期間：2週間</p>
+                    <p class="coder">担当コーダー：石井</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact wow fadeInUp slow" id="contact">
+      <div class="inner">
+        <h2 class="title">お問い合わせ</h2>
+        <p class="title-en">CONTACT</p>
+        <p class="contact__message">コーディングの人出が足りないとき、<br>あなたの力になります</p>
+        <form class="contact__form"
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiu2OXn6fYEOh2-9KW-t0mFtIPBiIbBoSD8RRyaRBxqDNmQQ/formResponse"
+          id="form">
+          <div class="box">
+            <label for="name">お名前<span>必須</span></label>
+            <input type="name" name="entry.755601983" id="name" placeholder="" required>
+          </div>
+          <div class="box">
+            <label for="mail">メールアドレス<span>必須</span></label>
+            <input type="mail" name="entry.2109099998" id="mail" placeholder="" required>
+          </div>
+          <div class="box">
+            <label class="text">お問い合わせ内容<span>必須</span></label>
+            <textarea name="entry.353000671" id="text" placeholder="" required></textarea><!-- /# -->
+          </div>
+          <div class="box">
+            <label for="privacyCheck"><input type="checkbox" id="privacyCheck" required>プライバシーポリシーに同意します</label>
+          </div>
+          <div class="contact__button">
+            <button class="contact-btn" id="js-submit" disabled>送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer wow fadeInUp slow">
+      <div class="inner">
+        <h2 class="title">ユアコーディング</h2>
+        <div class="footer__contents">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">個人商取引法に基づく表記</a>
+        </div>
+        <small class="copyright">©ユアコーディング, All Rights Reserved.</small>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>

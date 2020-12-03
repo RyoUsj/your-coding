@@ -13,7 +13,6 @@
   <script src="./js/wow.min.js"></script>
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- drawer.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
   <!-- jquery & iScroll -->
@@ -258,7 +257,8 @@
         <p class="title-en">CONTACT</p>
         <p class="contact__message">コーディングの人出が足りないとき、<br>あなたの力になります</p>
         <form class="contact__form"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiu2OXn6fYEOh2-9KW-t0mFtIPBiIbBoSD8RRyaRBxqDNmQQ/formResponse"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfWux0luHok7ai23kATExR5QfucMKMRSdR756pImvc2SiFU4Q/viewform?usp=pp_url"
+
           id="form">
           <div class="box">
             <label for="name">お名前<span>必須</span></label>
@@ -276,7 +276,7 @@
             <label for="privacyCheck"><input type="checkbox" id="privacyCheck" required>プライバシーポリシーに同意します</label>
           </div>
           <div class="contact__button">
-            <button class="contact-btn" id="js-submit" disabled>送信する</button>
+            <input type="submit" value="送信する" class="contact-btn" id="js-submit" disabled>
           </div>
         </form>
       </div>
@@ -294,6 +294,6 @@
     </footer>
 
   </main>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

@@ -218,7 +218,6 @@ header {
   }
 }
 
-
 /*============================================================
 # hero
 ============================================================*/
@@ -298,7 +297,8 @@ header {
       }
 
       .features__image {
-        width: 380px;
+        max-width: 380px;
+        width: 100%;
       }
 
       .features__text {
@@ -317,16 +317,22 @@ header {
 
         @include screen-mq(md) {
           flex-direction: column;
+          align-items: center;
         }
       }
 
       .features__image {
-        width: 479px;
+        max-width: 479px;
+        width: 100%;
       }
 
       .features__text {
         h4 {
           margin-top: 2px;
+
+          @include screen-mq(md) {
+            text-align: center;
+          }
         }
         p {
           margin-top: 40px;
@@ -341,10 +347,15 @@ header {
       .features__flex {
         margin-top: 62px;
         align-items: flex-end;
+
+        @include screen-mq(md) {
+          align-items: center;
+        }
       }
 
       .features__image {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
       }
 
       .features__text {
@@ -377,6 +388,11 @@ header {
       font-weight: bold;
       line-height: 2;
       padding-left: 30px;
+
+      @include screen-mq(md) {
+        padding: 0;
+        margin-top: 1em;
+      }
     }
 
     p {
@@ -384,10 +400,13 @@ header {
       font-weight: bold;
       line-height: 1.5;
       padding-left: 30px;
+
+      @include screen-mq(md) {
+        padding: 0;
+      }
     }
   }
 }
-
 
 /*============================================================
 # price
@@ -596,6 +615,15 @@ header {
 
   .swiper-container {
     margin-top: 68px;
+    width: 100%;
+  }
+
+  .swiper_wrapper {
+    width: 50%;
+  }
+
+  .swiper-slide {
+    width: auto;
   }
 
   .works__card {
@@ -606,6 +634,7 @@ header {
     border-radius: 8px;
     width: 322px;
     height: 407px;
+    flex-wrap: nowrap;
   }
 
   .works__image {
@@ -747,6 +776,11 @@ header {
 
     button {
       padding: 8px 50px;
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
 
       @include screen-mq(sm) {
         width: 100%;

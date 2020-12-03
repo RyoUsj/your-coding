@@ -308,7 +308,8 @@ header .drawer-hamburger {
 }
 
 .features .features__item:nth-child(1) .features__image {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
 }
 
 .features .features__item:nth-child(1) .features__text p {
@@ -333,15 +334,25 @@ header .drawer-hamburger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .features .features__item:nth-child(2) .features__image {
-  width: 479px;
+  max-width: 479px;
+  width: 100%;
 }
 
 .features .features__item:nth-child(2) .features__text h4 {
   margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .features .features__item:nth-child(2) .features__text h4 {
+    text-align: center;
+  }
 }
 
 .features .features__item:nth-child(2) .features__text p {
@@ -360,8 +371,17 @@ header .drawer-hamburger {
           align-items: flex-end;
 }
 
+@media (max-width: 768px) {
+  .features .features__item:nth-child(3) .features__flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .features .features__item:nth-child(3) .features__image {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .features .features__item:nth-child(3) .features__text p {
@@ -400,11 +420,24 @@ header .drawer-hamburger {
   padding-left: 30px;
 }
 
+@media (max-width: 768px) {
+  .features .features__text h4 {
+    padding: 0;
+    margin-top: 1em;
+  }
+}
+
 .features .features__text p {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
   padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .features .features__text p {
+    padding: 0;
+  }
 }
 
 /*============================================================
@@ -650,6 +683,15 @@ header .drawer-hamburger {
 
 .works .swiper-container {
   margin-top: 68px;
+  width: 100%;
+}
+
+.works .swiper_wrapper {
+  width: 50%;
+}
+
+.works .swiper-slide {
+  width: auto;
 }
 
 .works .works__card {
@@ -660,6 +702,8 @@ header .drawer-hamburger {
   border-radius: 8px;
   width: 322px;
   height: 407px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .works .works__image {
@@ -802,6 +846,11 @@ header .drawer-hamburger {
 
 .contact .contact__button button {
   padding: 8px 50px;
+}
+
+.contact .contact__button button:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 @media (max-width: 544px) {
